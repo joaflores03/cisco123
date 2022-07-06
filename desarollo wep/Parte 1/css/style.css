@@ -1,11 +1,12 @@
-*{
+body{
     margin: 0;
     padding: 0;
 }
 
 header{
     background-color: #fbbc02;
-    height: 100px;
+    height: 120px;
+
 }
 
 img{
@@ -14,31 +15,56 @@ img{
     height: auto;
 }
 
-.wp-arriba{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
+nav{
+    display: flex;
+    flex-direction: row;
+    z-index: 999;
 }
 
-.wp-abajo{
+.wp-left{
     display:flex;
-    justify-content: flex-end;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: auto;
     margin-top: 10px;
-    gap: 10px;
-    margin-right: 5px;
+}
+
+.wp-left p{
+    margin-left: 25px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.wp-right{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    margin-right: 20px;
+}
+
+.wp-right p:nth-child(1){
+    margin-top: 20px;
     font-size: 18px;
 }
-
-p:nth-child(1){
+.cuentas{
     display: flex;
-    justify-content: flex-start;
-    
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -6px;
+    gap: 40px;
 }
-.padre {
-
-display: flex;
-flex-direction: row;
 
 
+.banner{
+    width: 100%;
+    height: 340px;
+    background-image: url('/desarollo wep/Parte 1/img/banner1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
